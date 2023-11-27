@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  db:
+    image: mysql:8
+    ports:
+      - "3306:3306"
+    restart: "unless-stopped"
+    environment:
+      - MYSQL_ROOT_PASSWORD=ss11299!!
+      - MYSQL_ROOT_HOST=%
+      - MYSQL_DATABASE=Node_Project_db
