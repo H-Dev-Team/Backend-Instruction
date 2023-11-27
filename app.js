@@ -28,7 +28,9 @@ app.use("/api", api);
 
 // Error Handler
 app.use((err, req, res, next) => {
-  return res.status(500).send(err.message);
+  return res.status(500).send({
+    message: err.message,
+  });
 });
 
 // Initialize Server
